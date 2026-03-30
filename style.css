@@ -193,3 +193,29 @@ a{
         transform: translateX(5px);
     }
 }
+
+.grid-lines{
+    position: relative;
+    background-color: #fff;
+    opacity: 0.8;
+
+    --x: 50%;
+    --y: 50%;
+}
+
+#y-axis{
+    height: 2px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 10;
+}
+
+#x-axis{
+    height: 100%;
+    width: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+    z-index: 10;
+}
