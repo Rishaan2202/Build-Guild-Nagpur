@@ -20,7 +20,7 @@ body{
 h1{
     color: #ffc857;
     text-align: left;
-    font-family: Public Sans, sans-serif;
+    font-family: "R&C Guidelines", Public Sans, sans-serif;
     font-size: 6rem;
 }
 
@@ -29,9 +29,10 @@ p{
     text-align: left;
     margin-top: 20px;
     margin-left: 15px;
-    font-family: Public Sans, sans-serif;
+    font-family: "R&C Guidelines", Public Sans, sans-serif;
     font-size: 2rem;
     width: 730px;
+    line-height: 1.5;
 }
 
 a{
@@ -46,10 +47,44 @@ a{
     font-weight: bold;
 }
 
+#by-teenagers{
+    display: inline-block;
+    background-color: #fe8e86;
+    color: #0D2B52;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transform: rotate(5deg);
+}
+
+#by-teenagers:hover{
+    transition: all 0.2s ease-in-out;
+    scale: 1.2;
+    cursor: default;
+    background-color: #bd4c44;
+}
+
+#for-teenagers{
+    display: inline-block;
+    background-color: #a8f0ae;
+    color: #0D2B52;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transform: rotate(-3deg);
+}
+
+#for-teenagers:hover{
+    transition: all 0.2s ease-in-out;
+    scale: 1.2;
+    cursor: default;
+    background-color: #500e0e;
+}
+
 #heading{
     display: grid;
     grid-template-rows: min-content;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 15px;
 }
 
@@ -194,28 +229,20 @@ a{
     }
 }
 
-.grid-lines{
-    position: relative;
-    background-color: #fff;
-    opacity: 0.8;
-
-    --x: 50%;
-    --y: 50%;
-}
-
 #y-axis{
     height: 2px;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
     z-index: 10;
 }
 
 #x-axis{
-    height: 100%;
+    height: 100px;
     width: 2px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
     z-index: 10;
 }
