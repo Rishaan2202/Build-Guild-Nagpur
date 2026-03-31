@@ -8,7 +8,7 @@ document.addEventListener("mousemove", (e) => {
 });
 
 const home = document.getElementById("home");
-home.addEventListener("onclick", homeClick() => {
+document.addEventListener("onclick", function homeClick() {
 
     home.style.backgroundColor = "#ff0000";
     home.style.borderRadius = "5px";   
