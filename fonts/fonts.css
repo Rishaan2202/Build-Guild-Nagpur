@@ -1,0 +1,40 @@
+
+@font-face {
+    font-family: "R&C Basic Empty";
+    src: url(./fonts/RC-BasicEmpty\ \(1\).ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Basic Dark";
+    src: url(./fonts/RC-BasicDark.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Basic Full";
+    src: url(./fonts/RC-BasicFull\ \(1\).ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Basic Light";
+    src: url(./fonts/RC-BasicLight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Guidelines";
+    src: url(./fonts/RC-GuidelinesLight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Guidelines Dark";
+    src: url(./fonts/RC-GuidelinesDark.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Guidelines Empty";
+    src: url(./fonts/RC-GuidelinesEmpty.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Guidelines Full";
+    src: url(./fonts/RC-GuidelinesFull.ttf) format("truetype");
+}

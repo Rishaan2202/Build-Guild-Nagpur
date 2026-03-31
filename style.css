@@ -1,3 +1,5 @@
+@import url('./fonts/fonts.css');
+
 *{
     margin: 0;
     padding: 0;
@@ -16,23 +18,24 @@ body{
     position: relative;
 }
 
-
 h1{
     color: #ffc857;
     text-align: left;
-    font-family: "R&C Guidelines", Public Sans, sans-serif;
+    font-family: "R&C Basic Full", Public Sans, sans-serif;
     font-size: 6rem;
+    word-spacing: -20px;
 }
 
 p{
     color: #dbe4ee;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 0;
     margin-left: 15px;
-    font-family: "R&C Guidelines", Public Sans, sans-serif;
-    font-size: 2rem;
-    width: 730px;
+    font-family: "R&C Basic Full", Public Sans, sans-serif;
+    font-size: 1.75rem;
+    width: 750px;
     line-height: 1.5;
+    letter-spacing: 0.005em;
 }
 
 a{
@@ -41,9 +44,11 @@ a{
 }
 
 #nagpur{
+    position: relative;
+    bottom: 23px;
     color: #a8f0ae;
     font-size: 6rem;
-    font-family: Public Sans, sans-serif;
+    font-family: "R&C Basic Full", Public Sans, sans-serif;
     font-weight: bold;
 }
 
@@ -55,6 +60,7 @@ a{
     border-radius: 10px;
     padding: 5px 10px;
     transform: rotate(5deg);
+    font-weight: bold;
 }
 
 #by-teenagers:hover{
@@ -72,13 +78,14 @@ a{
     border-radius: 10px;
     padding: 5px 10px;
     transform: rotate(-3deg);
+    font-weight: bold;
 }
 
 #for-teenagers:hover{
     transition: all 0.2s ease-in-out;
     scale: 1.2;
     cursor: default;
-    background-color: #500e0e;
+    background-color: #dbe4ee;
 }
 
 #heading{
@@ -104,8 +111,7 @@ a{
 
 #blueprint-logo:hover{
     scale: 1.2;
-    transition: all 0.2s ease-in-out;
-    
+    transition: all 0.2s ease-in-out; 
 }
 
 
@@ -133,29 +139,20 @@ a{
     transform-origin: center;
 }
 
+#build-guild-small-logo{
+    position: fixed;
+    top: 250px;
+    right: 305.5px;
+    animation: rotate 3.5s linear infinite;
+    transform-origin: center;
+}
+
 @keyframes rotate {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
-    }
-}
-
-#build-guild-small-logo{
-    position: fixed;
-    top: 250px;
-    right: 305.5px;
-    animation: anti-rotate 3.5s linear infinite;
-    transform-origin: center;
-}
-
-@keyframes anti-rotate {
-    from {
-        transform: rotate(360deg);
-    }
-    to {
-        transform: rotate(0deg);
     }
 }
 
@@ -169,7 +166,7 @@ a{
     border: none;
     border-radius: 15px;
     font-size: 1.5rem;
-    font-family: Public Sans, sans-serif;
+    font-family: "R&C Basic Dark", Public Sans, sans-serif;
     font-weight: bold;
     cursor: pointer;
 }
@@ -212,7 +209,7 @@ a{
     display: flex;
     gap: 30px;
     list-style: none;
-    font-family: Public Sans, sans-serif;
+    font-family: "R&C Basic Dark", Public Sans, sans-serif;
     font-size: 1.5rem;
     background-color: #344b6a;
     padding: 15px 30px;
@@ -245,4 +242,44 @@ a{
     top: 0;
     right: 0;
     z-index: 10;
+}
+
+@font-face {
+    font-family: "R&C Basic Empty";
+    src: url(./fonts/RC-BasicEmpty\ \(1\).ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Basic Dark";
+    src: url(./fonts/RC-BasicDark.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Basic Full";
+    src: url(./fonts/RC-BasicFull\ \(1\).ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Basic Light";
+    src: url(./fonts/RC-BasicLight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Guidelines";
+    src: url(./fonts/RC-GuidelinesLight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Guidelines Dark";
+    src: url(./fonts/RC-GuidelinesDark.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Guidelines Empty";
+    src: url(./fonts/RC-GuidelinesEmpty.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "R&C Guidelines Full";
+    src: url(./fonts/RC-GuidelinesFull.ttf) format("truetype");
 }
