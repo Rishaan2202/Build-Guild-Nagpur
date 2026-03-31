@@ -134,7 +134,7 @@ a{
 #conveyor-belt{
     position: absolute;
     top: 127px;
-    left: 1000px;
+    left: 985px;
     transform: translateX(-50%);
     z-index: -1;
 }
@@ -166,7 +166,7 @@ a{
 
 .normal-button{
     position: absolute;
-    top: 1000px;
+    top: 1300px;
     bottom: 40px;
     left: 30px;
     height: fit-content;
@@ -224,6 +224,7 @@ a{
     background-color: #344b6a;
     padding: 15px 30px;
     border-radius: 15px;
+    z-index: 2;
 }
 
 @keyframes cursor-blink {
@@ -255,20 +256,95 @@ a{
 }
 
 .card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    top: -420px;
     position: absolute;
-    top: 700px;
     left: 15px;
+}
+
+#venue-card{
+    margin: 5px;
     background-color: #344b6a;
     padding: 20px;
     border-radius: 15px;
-    width: 400px;
+    width: max-content;
+}
+
+#venue-card:hover{
+    background-color: #3e5c8a;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+    cursor: default;
+}
+
+#date-and-time-card{
+    margin: 5px;
+    background-color: #344b6a;
+    padding: 20px;
+    border-radius: 15px;
+    width: max-content;
+}
+
+#date-and-time-card:hover{
+    background-color: #3e5c8a;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+    cursor: default;
+}
+
+#free-food-card{
+    margin: 5px;
+    background-color: #344b6a;
+    padding: 20px;
+    border-radius: 15px;
+    width: max-content;
+}
+
+#free-food-card:hover{
+    background-color: #3e5c8a;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+    cursor: default;
+}
+
+#free-swag-card{
+    margin: 5px;
+    background-color: #344b6a;
+    padding: 20px;
+    border-radius: 15px;
+    width: max-content;
+}
+
+#free-swag-card:hover{
+    background-color: #3e5c8a;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+    cursor: default;
 }
 
 #about-heading{
     position: absolute;
-    top: 550px;
+    top: -550px;
     left: 15px;
     font-family: "R&C Basic Full", Public Sans, sans-serif;
+}
+
+.card p{
+    font-family: "R&C Basic Light", Public Sans, sans-serif;
+    font-size: 1.2rem;
+    color: #dbe4ee;
+    line-height: 1.5;
+    width: 300px;
+    margin-left: 0;
+}
+
+#about-content{
+    position: relative;
+    top: 650px;
+    left: 15px;
+    width: 1000px;   
 }
 
 @font-face {
