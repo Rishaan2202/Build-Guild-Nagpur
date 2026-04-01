@@ -16,6 +16,7 @@ body{
         0 0, 
         0 0;
     position: relative;
+    overflow-x: hidden;
 }
 
 h1{
@@ -166,7 +167,7 @@ a{
 
 .normal-button{
     position: absolute;
-    top: 1300px;
+    top: 1200px;
     bottom: 40px;
     left: 30px;
     height: fit-content;
@@ -179,6 +180,7 @@ a{
     font-family: "R&C Basic Dark", Public Sans, sans-serif;
     font-weight: bold;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .normal-button:hover{
@@ -238,21 +240,23 @@ a{
 }
 
 #y-axis{
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 10;
+    height: 1px;
+    width: 200vw;
+    position: fixed;
+    z-index: -2;
+    background-color: #fff;
+    pointer-events: none;
+    opacity: 0.4;
 }
 
 #x-axis{
-    height: 100px;
-    width: 2px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 10;
+    height: 400vh;
+    width: 1px;
+    position: fixed;
+    z-index: -2;
+    background-color: #fff;
+    pointer-events: none;
+    opacity: 0.4;
 }
 
 .card{
@@ -318,6 +322,22 @@ a{
 }
 
 #free-swag-card:hover{
+    background-color: #3e5c8a;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+    cursor: default;
+}
+
+#gas-fund-card{
+    margin: 5px;
+    background-color: #344b6a;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    width: max-content;
+}
+
+#gas-fund-card:hover{
     background-color: #3e5c8a;
     transition: all 0.2s ease-in-out;
     scale: 1.1;
