@@ -66,13 +66,19 @@
 
     <button class="normal-button" id="donate"><a href="hcb.hackclub.com/build-guild-nagpur">Donate</a></button>
 
-    <ul class="navbar">
-        <li id="home" onclick="homeClick()">Home</li>
-        <li id="about"><a href="">About</a></li>
-        <li id="details"><a href="">Details</a></li>
-        <li id="FAQ"><a href="">FAQ</a></li>
-        <li id="Join"><a href="">Join</a></li>  
-    </ul>
+    <div id="nav">
+
+        <ul class="navbar">
+            <li id="home">Home</li>
+            <li id="about">About</li>
+            <li id="details">Schedule</li>
+            <li id="FAQ">FAQ</li>
+            <li id="Join">Join</li>  
+        </ul>
+
+        <div id="indicator"></div>
+
+    </div>
 
     <div id="x-axis"></div>
     <div id="y-axis"></div>
@@ -112,8 +118,47 @@
             </button>
         </a>
 
+        <div id="age-card">
+            <h2>Age Restriction</h2>
+            <p>Participants must be between 13-18 years of age.</p>
+        </div>
+
     </div>
 
+</div>
+
+<div id="about-schedule">
+    <div id="schedule-heading">
+        <h1>Schedule</h1>   
+    </div>
+
+    <div id="schedule-content">
+        <ul>
+            <li id="schedule-card-1" class="schedule-card">
+                <h2>9:00 AM - 10:00 AM</h2>
+                <p>Registration and Welcome</p>
+            </li>
+
+            <li id="schedule-card-2" class="schedule-card">
+                <h2>10:00 AM - 12:00 PM</h2>
+                <p>PCB Making Workshop</p>
+            </li>
+
+            <li id="schedule-card-3" class="schedule-card">
+                <h2>12:00 PM - 1:30 PM</h2>
+                <p>Lunch + Fun</p>
+            </li>
+
+            <li id="schedule-card-4" class="schedule-card">
+                <h2>1:30 PM - 2:30 PM</h2>
+                <p>Hardware Fun</p>
+            </li>
+
+            <li id="schedule-card-5" class="schedule-card">
+                <h2>2:30 PM - 3:00 PM</h2>
+                <p>Dispersal + Closing</p>
+            </li>
+        </ul>`
 </div>
 
 <script src="script.js"></script>

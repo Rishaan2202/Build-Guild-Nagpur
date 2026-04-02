@@ -27,16 +27,16 @@ console.log(e.clientX, e.clientY);
 
 
 /*Navbar functionality*/
-const home = document.getElementById("home");
-document.addEventListener("click", function homeClick() {
+document.querySelectorAll('.navbar li').forEach(item => {
+    item.addEventListener("click", function () {
 
-    home.style.backgroundColor = "#ff0000";
-    home.style.borderRadius = "5px";   
-    home.style.padding = "10px 20px";
+        item.style.backgroundColor = "#344b6a";
+        item.style.borderRadius = "5px";   
+        item.style.padding = "5px 10px";
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     });
-    
 });

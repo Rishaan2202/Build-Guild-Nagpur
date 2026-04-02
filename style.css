@@ -167,7 +167,7 @@ a{
 
 .normal-button{
     position: absolute;
-    top: 1200px;
+    top: 2400px;
     bottom: 40px;
     left: 30px;
     height: fit-content;
@@ -211,22 +211,6 @@ a{
     background-color: #fff;
     pointer-events: none;
     animation: cursor-blink 1s infinite alternate;
-}
-
-.navbar{
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    font-family: "R&C Basic Dark", Public Sans, sans-serif;
-    font-size: 1.5rem;
-    background-color: #344b6a;
-    padding: 15px 30px;
-    border-radius: 15px;
-    z-index: 2;
 }
 
 @keyframes cursor-blink {
@@ -274,13 +258,14 @@ a{
     padding: 20px;
     border-radius: 15px;
     width: max-content;
+    cursor: pointer;
 }
 
 #venue-card:hover{
     background-color: #3e5c8a;
     transition: all 0.2s ease-in-out;
     scale: 1.1;
-    cursor: default;
+    cursor: pointer;
 }
 
 #date-and-time-card{
@@ -335,9 +320,26 @@ a{
     border: none;
     border-radius: 15px;
     width: max-content;
+    cursor: pointer;
 }
 
 #gas-fund-card:hover{
+    background-color: #3e5c8a;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#age-card{
+    margin: 5px;
+    background-color: #344b6a;
+    padding: 20px;
+    border-radius: 15px;
+    width: max-content;
+    cursor: pointer;
+}
+
+#age-card:hover{
     background-color: #3e5c8a;
     transition: all 0.2s ease-in-out;
     scale: 1.1;
@@ -365,6 +367,140 @@ a{
     top: 650px;
     left: 15px;
     width: 1000px;   
+}
+
+
+.navbar{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-family: "R&C Basic Dark", Public Sans, sans-serif;
+    font-size: 1.5rem;
+    background-color: #344b6a;
+    padding: 15px 30px;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.navbar li{
+    cursor: pointer;
+}
+
+#nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#schedule-heading{
+    position: absolute;
+    top: 1250px;
+}
+
+#schedule-content{
+    position: absolute;
+    top: 1400px;
+    left: 15px;
+    width: 1000px;  
+}
+
+#schedule-content ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 3 1fr;
+    grid-template-rows: 2, auto;
+}
+
+.schedule-card p{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#schedule-card-1{
+    margin: 5px;
+    background-color: #344b6a;
+    padding: 20px;
+    border-radius: 15px;
+    width: 530px;
+    cursor: pointer;
+}
+
+#schedule-card-1:hover{
+    background-color: #3e5c8a;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+    cursor: default;
+}
+
+#schedule-card-2{
+    margin: 5px;
+    background-color: #344b6a;
+    padding: 20px;
+    border-radius: 15px;
+    width: 530px;
+    cursor: pointer;
+}
+
+#schedule-card-2:hover{
+    background-color: #3e5c8a;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+    cursor: default;
+}
+
+#schedule-card-3{
+    margin: 5px;
+    background-color: #344b6a;
+    padding: 20px;
+    border-radius: 15px;
+    width: 530px;
+    cursor: pointer;
+}
+
+#schedule-card-3:hover{
+    background-color: #3e5c8a;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+    cursor: default;
+}
+
+#schedule-card-4{
+    margin: 5px;
+    background-color: #344b6a;
+    padding: 20px;
+    border-radius: 15px;
+    width: 530px;
+    cursor: pointer;
+}
+
+#schedule-card-4:hover{
+    background-color: #3e5c8a;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+    cursor: default;
+}
+
+#schedule-card-5{
+    margin: 5px;
+    background-color: #344b6a;
+    padding: 20px;
+    border-radius: 15px;
+    width: 530px;
+    cursor: pointer;
+}
+
+#schedule-card-5:hover{
+    background-color: #3e5c8a;
+    transition: all 0.2s ease-in-out;
+    scale: 1.1;
+    cursor: default;
 }
 
 @font-face {
