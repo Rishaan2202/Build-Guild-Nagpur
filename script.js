@@ -27,16 +27,51 @@ console.log(e.clientX, e.clientY);
 
 
 /*Navbar functionality*/
-document.querySelectorAll('.navbar li').forEach(item => {
-    item.addEventListener("click", function () {
+function homeFunction() {
 
-        item.style.backgroundColor = "#344b6a";
-        item.style.borderRadius = "5px";   
-        item.style.padding = "5px 10px";
+    aboutDiv = document.getElementById("about");
+    aboutDiv.style.backgroundColor = "#344b6a";
+    aboutDiv.style.color = "inherit";
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+    homeDiv = document.getElementById("home");
+    homeDiv.style.backgroundColor = "#a8f0ae";
+    homeDiv.style.padding = "5px 20px";
+    homeDiv.style.borderRadius = "20px";
+    homeDiv.style.color = "#000000";
+    
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
     });
-});
+
+}
+
+function aboutFunction() {
+
+    aboutDiv = document.getElementById("about");
+    aboutDiv.style.backgroundColor = "#a8f0ae";
+    aboutDiv.style.padding = "5px 20px";
+    aboutDiv.style.borderRadius = "20px";
+    aboutDiv.style.color = "#000000";
+    
+    window.scrollTo({
+        top: 620,
+        behavior: "smooth"
+    });
+}
+
+function scheduleFunction() {
+    
+    window.scrollTo({
+        top: 1230,
+        behavior: "smooth"
+    });
+}
+
+function faqFunction() {
+    
+    window.scrollTo({
+        top: 2040,
+        behavior: "smooth"
+    });
+}

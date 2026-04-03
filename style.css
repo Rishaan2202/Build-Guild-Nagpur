@@ -167,7 +167,7 @@ a{
 
 .normal-button{
     position: absolute;
-    top: 3700px;
+    top: 4100px;
     bottom: 40px;
     left: 30px;
     height: fit-content;
@@ -628,16 +628,88 @@ a{
 #faq-numbers h3{
     color: #ffb347;
     font-family: "R&C Basic Full", Public Sans, sans-serif;
-    font-size: 5rem;
+    font-size: 10rem;
     margin-bottom: 10px;
     position: relative;
-    left: 20px;
+    left: 80px;
 }
 
 #faq-1{
+    position: fixed;
+    transform: translateX(200px);
+    transform: translateY(-1320px);
+}
+
+#faq-2{
+    position: fixed;
+    right: 150px;
+    transform: translateX(1030px);
+    bottom: 1330px;
+}
+
+#faq-3{
+    position: fixed;
+    transform: translateX(100px);
+    transform: translateY(-1360px);
+}
+
+#faq-4{
+    position: fixed;
+    right: 150px;
+    transform: translateX(1030px);
+    bottom: 1370px;
+}
+
+#faq-5{
+    position: fixed;
+    transform: translateX(200px);
+    transform: translateY(-1300px);
+}
+
+#faq-6{
+    position: fixed;
+    right: 150px;
+    transform: translateX(1030px);
+    bottom: 1280px;
+}
+
+#sponsors{
     position: absolute;
-    top: 2600px;
-    left: 20px;
+    top: 3620px;
+}
+
+#hackclub-logo{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+.sponsor-logo{
+    visibility: hidden;
+}
+
+#hackclub-text{
+    color: #dbe4ee;
+    font-size: 8em;
+    width: 800px;
+    word-spacing: -20px;
+    height: auto;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+
+@keyframes scroll-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        translate: transformX(100px);
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+    }
 }
 
 @font-face {

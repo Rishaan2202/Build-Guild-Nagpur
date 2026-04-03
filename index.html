@@ -69,11 +69,11 @@
     <div id="nav">
 
         <ul class="navbar">
-            <li id="home">Home</li>
-            <li id="about">About</li>
-            <li id="details">Schedule</li>
-            <li id="FAQ">FAQ</li>
-            <li id="Join">Join</li>  
+            <li id="home" onclick = homeFunction()>Home</li>
+            <li id="about" onclick = aboutFunction()>About</li>
+            <li id="details" onclick=scheduleFunction()>Schedule</li>
+            <li id="FAQ" onclick=faqFunction() >FAQ</li>
+            <li id="Join"><a href="https://blueprint.hackclub.com/guilds/invite/nagpur">Join</a></li>  
         </ul>
 
         <div id="indicator"></div>
@@ -194,7 +194,7 @@
             </li>
 
             <li id="faq-card-6" class="faq-card">
-                <h2>But IDK How to build Hardware</h2>
+                <h2>But IDK How to build Hardware!</h2>
                 <p>That's why we're here to help you learn!</p>
             </li>
 
@@ -207,6 +207,39 @@
                 <h3 id="faq-6">6</h3>
             </div>
         </ul>
+    </div>
+</div>
+
+<div id="sponsors">
+
+    <div id="sponsor-box"></div>
+
+    <div id="sponsors-heading">
+        <h1>Sponsors</h1>
+    </div>
+
+    <div id="sponsors-content">
+        <a href="https://www.hackclub.com/">
+            <img src="./hackclub.png" alt="Hack Club Logo" id="hackclub-logo">
+        </a>
+
+        <h2 id="hackclub-text">Hack Club</h2>
+
+        <a href="#">
+            <img src="#" alt="CircuitVerse Logo" class="sponsor-logo">
+        </a>
+
+        <a href="#">
+            <img src="#" alt="Tinkercad Logo" class="sponsor-logo">
+        </a>
+
+        <a href="#">
+            <img src="#" alt="Arduino Logo" class="sponsor-logo">
+        </a>
+
+        <a href="#">
+            <img src="#" alt="Raspberry Pi Logo" class="sponsor-logo">
+        </a>
     </div>
 </div>
 
