@@ -28,16 +28,6 @@ console.log(e.clientX, e.clientY);
 
 /*Navbar functionality*/
 function homeFunction() {
-
-    aboutDiv = document.getElementById("about");
-    aboutDiv.style.backgroundColor = "#344b6a";
-    aboutDiv.style.color = "inherit";
-
-    homeDiv = document.getElementById("home");
-    homeDiv.style.backgroundColor = "#a8f0ae";
-    homeDiv.style.padding = "5px 20px";
-    homeDiv.style.borderRadius = "20px";
-    homeDiv.style.color = "#000000";
     
     window.scrollTo({
         top: 0,
@@ -48,16 +38,11 @@ function homeFunction() {
 
 function aboutFunction() {
 
-    aboutDiv = document.getElementById("about");
-    aboutDiv.style.backgroundColor = "#a8f0ae";
-    aboutDiv.style.padding = "5px 20px";
-    aboutDiv.style.borderRadius = "20px";
-    aboutDiv.style.color = "#000000";
-    
     window.scrollTo({
         top: 620,
         behavior: "smooth"
     });
+    
 }
 
 function scheduleFunction() {
@@ -66,12 +51,14 @@ function scheduleFunction() {
         top: 1230,
         behavior: "smooth"
     });
+
 }
 
 function faqFunction() {
-    
+
     window.scrollTo({
         top: 2040,
         behavior: "smooth"
     });
+
 }

@@ -167,9 +167,9 @@ a{
 
 .normal-button{
     position: absolute;
-    top: 4100px;
+    top: 4300px;
     bottom: 40px;
-    left: 30px;
+    left: 450px;
     height: fit-content;
     padding: 15px 30px;
     background-color: #ffc857;
@@ -199,7 +199,7 @@ a{
 
 #donate{
     position: absolute;
-    left: 220px;
+    left: 650px;
 }
 
 #cursor{
@@ -699,6 +699,25 @@ a{
     position: absolute;
     top: 150px;
     left: 300px;
+}
+
+#gen-text{
+    color: #dbe4ee;
+    font-size: 8em;
+    width: 800px;
+    word-spacing: -20px;
+    height: auto;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+}
+
+#gen-logo{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 400px;
+    left: 900px;
 }
 
 @keyframes scroll-animation {
